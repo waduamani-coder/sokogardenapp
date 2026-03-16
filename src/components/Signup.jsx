@@ -47,6 +47,11 @@ const Signup = () => {
       setPassword("");
       setPhone("");
 
+      
+       setTimeout(() => {
+    setSuccess("");
+  }, 5000);
+
     }
     catch(error){
       // set the loading back to default
