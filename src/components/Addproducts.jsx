@@ -47,6 +47,14 @@ const Addproducts = () => {
       setProductcost("");
       setProductphoto("");
 
+      e.target.reset()
+
+      
+       setTimeout(() => {
+    setSuccess("");
+  }, 5000);
+
+
     }
     catch(error){
       // set the loading hook back to default
@@ -92,6 +100,7 @@ const Addproducts = () => {
 
           <input type="number"
           placeholder='Enter The price of the product'
+          className='form-control'
           required
           value={product_cost}
           onChange={(e) => setProductcost(e.target.value)} /> <br />
